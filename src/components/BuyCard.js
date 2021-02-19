@@ -1,9 +1,15 @@
-import styled from 'styled-components';
+import styled,{keyframes} from 'styled-components';
 import {useContext, useEffect, useState} from 'react';
 import { Redirect } from 'react-router-dom';
 import {MainContext} from '../App.js';
 
+const fadeIn = keyframes`
+    0% {opacity:0;}
+    100% {opacity:1;}
+`;
+
 let Buy= styled.div`
+animation:${fadeIn} .5s linear forwards;
     background-color:white;
     display:${props=>props.dis};
     grid-template-columns:1fr;
@@ -12,7 +18,7 @@ let Buy= styled.div`
     align-items:center;
     position:sticky;
     
-    top:40px;
+    top:130px;
     margin:auto;
     
     z-index:3;
@@ -66,14 +72,21 @@ let Buy= styled.div`
         width:40px;
         margin-left:20px;
         text-align:center;
-        
+        font-size:20px;
+    }
+
+    .card-container-inCart  {
+        font-size:20px;
+        color:red;
+        margin:10px 0;
     }
 
     .card-container-btn {
-        margin-top:20px;
         padding:10px;
-        
+        background:#2F376A;
         font-size:18px;
+        color:white;
+        cursor:pointer;
     }
 
     .card-container-close {
@@ -117,7 +130,15 @@ function BuyCard (props) {
 
     
     
-        
+    function checkCart() {
+        let checker=false;
+        for(let i of cartContext.cartState){
+            if(props.info.brand===i.brand && props.info.model===i.model){
+                checker=true;
+            }
+        }
+        return checker;
+    }    
 
 
     return (
@@ -130,6 +151,7 @@ function BuyCard (props) {
             <div className="card-container-filters">{props.info.filters}</div>
             <div className="card-container-price">{props.info.price}</div>
             <div className="card-container-quantity"><label>Quantity:</label><input className="card-container-quantity-input" type="number" value={quant} min={1} onChange={(e)=>quantityFunc(e)}/></div>
+            <div className="card-container-inCart">{checkCart() && "This item is in your cart already. Add more if you like."}</div>
             <button className="card-container-btn" type="button" onClick={addToCart}>Add to Cart</button>
         </Buy>
     )

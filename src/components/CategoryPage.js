@@ -1,11 +1,18 @@
-import styled from 'styled-components';
+import styled, {keyframes}from 'styled-components';
 import BuyCard from './BuyCard.js';
 import {useEffect, useState} from 'react';
 import {HashRouter as Router, Link, Switch,Route,useHistory} from 'react-router-dom';
 
-const Page = styled.div`
 
-        .category-page-overlay {
+const fadeIn = keyframes`
+    0% {opacity:0;}
+    100% {opacity:1;}
+`;
+const Page = styled.div`
+    
+    animation:${fadeIn} .5s linear forwards;
+
+    .category-page-overlay {
         height:100%;
         width:100%;
         background:black;
@@ -22,8 +29,6 @@ const Page = styled.div`
 
     .category-main {
         margin-bottom:40px;
-        
-      
     }
 
     .category-main-sort {
@@ -48,7 +53,18 @@ const Page = styled.div`
 
     .category-filter-title {
         font-weight:bold;
+        text-decoration:underline;
         margin-bottom:6px;
+        font-size:20px;
+    }
+
+    .category-filter-box {
+        margin-top:10px;
+    }
+
+    .category-filter-box-subtitle {
+        font-weight:bold;
+        margin-bottom:2px;
     }
 
     .category-main-products {
@@ -58,13 +74,11 @@ const Page = styled.div`
         
         
         @media screen and (max-width:1399px){
-            background:red;
             grid-template-columns:repeat(auto-fit,minmax(30%,1fr));
             grid-gap:10px;
         }
 
         @media screen and (max-width:767px){
-            background:red;
             grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
             grid-gap:10px;
         }
@@ -107,13 +121,18 @@ const Page = styled.div`
         
     }
 
+    .category-main-perPage {
+        margin-top:20px;
+        text-align:center;
+    }
+
     .category-title {
         
         margin:40px 0;
     }
     .product-container {
       
-        background:grey;
+        background:white;
         width:100%;
         box-sizing:border-box;
         padding:20px;
@@ -141,13 +160,8 @@ const Page = styled.div`
         font-size:18px;
     }
 
-
-
     .product-container-description{
-        
-        
         height:48px;
-       
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -164,6 +178,16 @@ const Page = styled.div`
     .product-container-filters {
         margin:15px 0;
     }
+
+    .product-container-btn {
+        padding:5px;
+        background:#2F376A;
+        color:white;
+        width:100%;
+        margin-top:10px;
+        cursor:pointer;
+        font-size:18px;
+    }
     
 
 `;
@@ -179,14 +203,14 @@ function CategoryPage (props) {
     const [cardDisplay,toggleCardDisplay]= useState("none");
     const [buyCardInfo, makeBuyCardInfo]=useState({});
     const [currPage,changeCurrPage]=useState(2);
-   
+    const [perPage,changePerPage]=useState(5);
 
 
     function makeFilterHead(){
         return props.filters.map(
             (value,index)=>
-            <div key={index}>
-                <div>{value.charAt(0).toUpperCase()+value.slice(1)}</div>
+            <div className="category-filter-box" key={index}>
+                <div className="category-filter-box-subtitle">{value.charAt(0).toUpperCase()+value.slice(1)}</div>
                 {makeFilterBody(value)}
             </div>
         )
@@ -337,13 +361,13 @@ function CategoryPage (props) {
         )
     }
     
-
+    
    
     function createPageRoutes () {
         let pagesArray = [];
         //2
-        for (let i=0;i<sorted.length;i+=5){
-            pagesArray.push(sorted.slice(i,i+5))
+        for (let i=0;i<sorted.length;i+=perPage){
+            pagesArray.push(sorted.slice(i,i+perPage))
         }
         
         
@@ -368,6 +392,9 @@ function CategoryPage (props) {
         )
     }
 
+    function modPerPage(e) {
+        changePerPage(e.target.value)
+    }
    
     
     return (
@@ -384,13 +411,25 @@ function CategoryPage (props) {
                 <div className="category-main">
                     <div className="category-main-sort">
                         <label>{"Sort: "} </label>
-                        <select onChange={(e)=>sortChange(e)}>
-                            <option value="none" disabled>Select</option>
+                        <select defaultValue="selected" onChange={(e)=>sortChange(e)}>
+                            <option value="selected" disabled>Select</option>
                             <option value="increase">Price Low to High</option>
                             <option value="decrease">Price High to Low</option>
                         </select>
                     </div>
                         {createPageRoutes()}
+                        <div className="category-main-perPage">
+                            <label>Items per page: </label>
+                            <select defaultValue="5" onChange={(e)=>modPerPage(e)}>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                            </select>
+
+                        </div>
+                        
+                       
                 </div>
             </div>
         

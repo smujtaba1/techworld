@@ -1,7 +1,5 @@
-import {useContext} from 'react';
-import {MainContext} from '../App.js';
 import React from 'react';
-import styled from 'styled-components';
+import styled,{keyframes} from 'styled-components';
 import {HashRouter as Router, Link} from 'react-router-dom';
 import powersupplies from '../images/powersupplies.png';
 import memoryram from '../images/memoryram.png';
@@ -12,9 +10,14 @@ import mice from '../images/mice.png';
 import keyboards from '../images/keyboards.png';
 import wifiadapters from '../images/wifiadapters.png';
 
+const fadeIn = keyframes`
+    0% {opacity:0;}
+    100% {opacity:1;}
+`;
 
 const HomeComp= styled.div`
-    background:#F1F1F1;
+    background:#FBFBFB;
+    animation:${fadeIn} .5s linear forwards;
     .home-products {
         display:flex;
         flex-wrap:wrap;
@@ -30,6 +33,15 @@ const HomeComp= styled.div`
         display:flex;
         flex-direction:column;
         justify-content:flex-end;
+        box-sizing:border-box;
+        padding:15px;
+        border:solid 1px transparent;
+
+        &:hover {
+            border:solid 1px black;
+        }
+
+
         align-items:center;
 
         >a {

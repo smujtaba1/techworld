@@ -1,10 +1,16 @@
-import styled from 'styled-components';
+import styled,{keyframes} from 'styled-components';
 import {useContext} from 'react';
 import {MainContext} from '../App.js';
 import {Link} from 'react-router-dom';
 
+const fadeIn = keyframes`
+    0% {opacity:0;}
+    100% {opacity:1;}
+`;
 
 const Cart= styled.div`
+
+    animation:${fadeIn} .8s linear forwards;
     .cart-title {
         margin:40px 0;
         text-align:center;
@@ -134,7 +140,7 @@ export function ShoppingCart() {
     function calculateTotal() {
         let myTotal=[...cartContext.cartState].reduce((total,item)=>
             {
-                let tot=item.quantity*item.price
+                let tot=item.quantity.toFixed(2)*item.price.toFixed(2)
                 return total + tot
             },0
         )
@@ -151,7 +157,7 @@ export function ShoppingCart() {
                 {cartContext.cartState.map((item,index)=>
                     <div className="item" key={index}>
                         <div className="item-container">
-                            <img className="item-container-image" src={item.image}/>
+                            <img alt="item" className="item-container-image" src={item.image}/>
                             <div className="item-container-brand">{item.brand}</div>
                             <div className="item-container-model">{item.model}</div>
                             <div className="item-container-filters">{item.filters}</div>
@@ -165,7 +171,7 @@ export function ShoppingCart() {
                     </div>)
                 }
                 <div className="finalTotal">
-                    {`Grand Total: ${calculateTotal()}`}
+                    {`Grand Total: ${calculateTotal().toFixed(2)}`}
                 
                 </div>
             </div>

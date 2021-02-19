@@ -5,6 +5,7 @@ import searchglass from '../images/searchglass.svg';
 import {useState, useContext, createContext} from 'react';
 import {Link, HashRouter as Router} from 'react-router-dom';
 import { MainContext } from '../App';
+import globe from '../images/globe.svg';
 
 const Banner = styled.div`
     
@@ -27,12 +28,21 @@ const Banner = styled.div`
         line-height:22px;
 
         @media screen and (max-width: 575px) {
-            font-size:20px;
+            font-size:16px;
+        }
+
+        >img {
+            max-height:20px;
         }
     }
 
     .banner-1-logo:visited {
         color:black;
+    }
+
+    .banner-1-nav {
+        display:flex;
+        align-items:center;
     }
 
     .banner-1-nav-list {
@@ -49,21 +59,21 @@ const Banner = styled.div`
         z-index:1;
         width:130px;
         font-size:16px;
-        box-shadow:2px 2px 30px red;
+        box-shadow:2px 2px 30px black;
         >li {
             
             
 
             >a:link, >a:visited {
                 padding:5px 5px;
-                color:white;
-                background:black;
+                color:#2F376A;
+                background:white;
                 box-sizing:border-box;
                 display:block;
 
                 :hover {
-                    color:black;
-                    background:white;
+                    color:white;
+                    background:#2F376A;
                 }
             }
 
@@ -76,7 +86,7 @@ const Banner = styled.div`
        cursor:pointer;
        font-size:24px;
        @media screen and (max-width: 575px) {
-        font-size:20px;
+        font-size:16px;
     }
     }
 
@@ -96,7 +106,7 @@ const Banner = styled.div`
     }
 
     .banner-2 {
-       background:grey;
+       background:#2F376A;
        padding:8px 0;
     }
 
@@ -156,7 +166,7 @@ function Navbar() {
             <Router>
                 <div className="banner wrapper">
                     <div className="banner-1" >
-                        <Link to="/" className="banner-1-logo">TECH WORLD</Link>
+                        <Link to="/" className="banner-1-logo">TECH <img alt="globe logo" src={globe}/> WORLD</Link>
                         <nav className="banner-1-nav">
                             <ul className="banner-1-nav-list">
                                 <li className="banner-1-nav-list-menu">

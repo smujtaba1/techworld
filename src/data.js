@@ -6,8 +6,10 @@ import evga750n1 from './images/evga750n1.png';
 import gigabytegpp850gm from './images/gigabytegpp850gm.png';
 import thermaltakesmart500 from './images/thermaltakesmart500.png';
 import thermaltaketoughpower850 from './images/thermaltaketoughpower850.png';
-
-
+import corsairhx1200 from './images/corsairhx1200.png';
+import evgasupernova1200 from './images/evgasupernova1200.png';
+import corsairrmx750 from './images/corsairrmx750.png';
+import thermaltakesmart600 from './images/thermaltakesmart600.png'
 
 //Graphics Cards
 import nvidiageforcertx3060 from './images/nvidiageforcertx3060.png';
@@ -67,12 +69,12 @@ let data = {
 			model:"CX550",
 			price:79.99,
 			description:`CX Series Modular power supply units are an excellent choice for basic system builds and desktop
-			PC computer upgrades, offering high reliability, low noise, and easy installation. The flexible modular cabling
-			system lets you use only the cables you need, and 80 PLUS Bronze certified efficiency means less excess heat,
-			lower noise, and lower power bills. The large-diameter, thermally controlled fan makes the CX Series Modular
-			quieter at idle, and reduces noise even when you're pushing your system hard. The matte black finish, black-sleeved
-			cables and black connectors help give your system a restrained, high-tech look. Continuous output rated temperature
-			C: 40°C.`,
+				PC computer upgrades, offering high reliability, low noise, and easy installation. The flexible modular cabling
+				system lets you use only the cables you need, and 80 PLUS Bronze certified efficiency means less excess heat,
+				lower noise, and lower power bills. The large-diameter, thermally controlled fan makes the CX Series Modular
+				quieter at idle, and reduces noise even when you're pushing your system hard. The matte black finish, black-sleeved
+				cables and black connectors help give your system a restrained, high-tech look. Continuous output rated temperature
+				C: 40°C.`,
 			power:550,
 			powerUnit:"watts",
 			image:corsaircx550
@@ -80,7 +82,7 @@ let data = {
 		{
 			brand:"Thermaltake",
 			model:"Smart-500",
-			price:127.65,
+			price:47.99,
 			description:`Incorporating various high-quality components, The smart series - models are Rated from 500W to 700W
 			- saves energy through its high efficiency of up to 86% and accommodates any mainstream build with the most
 			demanding requirements. An embedded intelligent cooling fan delivers excellent Airflow at an exceptionally low
@@ -117,6 +119,32 @@ let data = {
 			image:gigabytegpp850gm
 		},
 		
+		
+		{
+			brand:"Corsair",
+			model:"HX1200",
+			price:439.99,
+			description:`The CORSAIR HX Series gives you extremely tight voltages and virtually silent operation. With all
+			Japanese capacitors, they're ideal for high performance PCs where reliability is essential. 80+ Platinum efficiency
+			reduces operating cost and excess heat, and together with the Zero RPM Fan Mode, gives you virtually silent
+			operation. Tech support: 1-888-222-4346 opt. 1`,
+			power:1200,
+			powerUnit:"watts",
+			image:corsairhx1200
+		},
+		{
+			brand:"EVGA",
+			model:"Supernova",
+			price:524.99,
+			description:`Introducing the EVGA Supernova 1200 P2 power supply. This power supply raises the bar with 1200W of
+			continuous power delivery and 92% efficiency. A fully modular design reduces case clutter and 100% Japanese
+			Capacitors ensures that only the absolute best components are used. What does that mean? The best stability,
+			reliability, overclock ability and unparalleled control. The EVGA Supernova 1200 P2 is the ultimate tool to eliminate
+			all system bottlenecks and achieve unrivaled performance.`,
+			power:1200,
+			powerUnit:"watts",
+			image:evgasupernova1200
+		},
 		{
 			brand:"Thermaltake",
 			model:"Toughpower-850",
@@ -132,7 +160,39 @@ let data = {
 			power:850,
 			powerUnit:"watts",
 			image:thermaltaketoughpower850
+		},
+		{
+			brand:"Corsair",
+			model:"RMX750",
+			price:144.95,
+			description:`Corsair RM750x series power supplies are built with the highest quality components to deliver 80 PLUS
+			Gold efficient power to your PC. Using only Japanese 105 Degree C capacitors, users can depend on an RM750x PSUs' long
+			life and reliability, backed by a ten year warranty. Zero RPM Mode means an RM750x series PSU is virtually silent at
+			low and medium loads, and even at maximum power, a low noise fan ensures quiet operation. Fully modular cables make PC
+			builds and upgrades easy, as you only need to install the cables your system requires. Quiet, efficient and dependable,
+			an RM750x PSU has everything you need to power your high performance PC for years to come. PC for years to come.
+			Continuous output rated temperature: 50°C.`,
+			power:750,
+			powerUnit:"watts",
+			image:corsairrmx750
+		},
+		{
+			brand:"Thermaltake",
+			model:"Smart-600",
+			price:54.99,
+			description:`Incorporating various high-quality components, The smart series - models are Rated from 500W to 700W
+			- saves energy through its high efficiency of up to 86% and accommodates any mainstream build with the most
+			demanding requirements. An embedded intelligent cooling fan delivers excellent Airflow at an exceptionally low
+			noise level. Additionally, the single +12V rail design enables non-stop usage with stable and reliable performance.
+			Smart Series adopt 120mm cooling fan delivers excellent Airflow at an exceptionally low noise level. Smart Series
+			saves energy through its high energy efficiency of up to 86% and is 80 PLUS standard Certified. High quality
+			components enable non-stop usage with stable and reliable performance, no more capacitor explosion and leakage.
+			Single +12V output.`,
+			power:600,
+			powerUnit:"watts",
+			image:thermaltakesmart600
 		}
+
 	],
 	
 	
@@ -370,6 +430,9 @@ let data = {
 			price:130.95,
 			description:"Buy nvidia graphics card so you have no problems when you game and all that stuff knamsayn",
 			dataRate:1750,
+			dataRateUnit:"Mbps",
+			type:"external",
+
 		}
 	],
 	
