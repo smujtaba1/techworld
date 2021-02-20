@@ -148,11 +148,13 @@ const Page = styled.div`
         flex-direction:row;
         justify-content:center;
         align-items:center;
+        margin-bottom:20px;
     }
 
     .product-container-image >img {
-        width:120px;
-
+        width:100%;
+        max-height:100%;
+        object-fit:contain;
     }
 
     .product-container-brand {
@@ -367,10 +369,11 @@ function CategoryPage (props) {
         let pagesArray = [];
         //2
         for (let i=0;i<sorted.length;i+=perPage){
+            console.log(i,i+perPage)
             pagesArray.push(sorted.slice(i,i+perPage))
         }
         
-        
+      
         
 
         return (
@@ -393,7 +396,11 @@ function CategoryPage (props) {
     }
 
     function modPerPage(e) {
-        changePerPage(e.target.value)
+      
+        changeCurrPage(2);
+        
+        changePerPage(Number(e.target.value))
+        history.push("1");
     }
    
     

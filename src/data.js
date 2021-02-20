@@ -16,6 +16,7 @@ import nvidiageforcertx3060 from './images/nvidiageforcertx3060.png';
 import nvidiageforcertx2060 from './images/nvidiageforcertx2060.png';
 import nvidiageforcertx3090 from './images/nvidiageforcertx3090.png';
 import nvidiageforcegtx1050ti from './images/nvidiageforcegtx1050ti.png';
+
 //Ram
 import corsairvengeance from './images/corsairvengeance.png';
 import atechfbact2kit from './images/atechfbact2kit.png';
@@ -25,14 +26,25 @@ import corsairdominator from './images/corsairdominator.png';
 
 //Storage Drives
 import samsungevo1000 from './images/samsungevo1000.png';
+
+
+
+
 //Processors
 import amdryzen3600 from './images/amdryzen3600.png';
 import inteli510400 from './images/inteli510400.png';
+
 //Mice
 import jellycombms001 from './images/jellycombms001.png';
 import logitechm525 from './images/logitechm525.png';
+
 //Keyboards
+import arteckhw192 from './images/arteckhw192.png';
+import corsairk55 from './images/corsairk55.png';
+
 //Wifi Adapters
+import febsmartn600 from './images/febsmartn600.png';
+import tplinkac600 from './images/tplinkac600.png';
 
 let data = {
 	powerSupplies: [
@@ -191,12 +203,442 @@ let data = {
 			power:600,
 			powerUnit:"watts",
 			image:thermaltakesmart600
+		},
+		//Repeated items Below
+		{
+			brand:"EVGA",
+			model:"Supernova",
+			price:524.99,
+			description:`Introducing the EVGA Supernova 1200 P2 power supply. This power supply raises the bar with 1200W of
+			continuous power delivery and 92% efficiency. A fully modular design reduces case clutter and 100% Japanese
+			Capacitors ensures that only the absolute best components are used. What does that mean? The best stability,
+			reliability, overclock ability and unparalleled control. The EVGA Supernova 1200 P2 is the ultimate tool to eliminate
+			all system bottlenecks and achieve unrivaled performance.`,
+			power:1200,
+			powerUnit:"watts",
+			image:evgasupernova1200
+		},
+		{
+			brand:"Thermaltake",
+			model:"Toughpower-850",
+			price:127.65,
+			description:`Incorporating various high-quality components, The smart series - models are Rated from 500W to 700W
+			- saves energy through its high efficiency of up to 86% and accommodates any mainstream build with the most
+			demanding requirements. An embedded intelligent cooling fan delivers excellent Airflow at an exceptionally low
+			noise level. Additionally, the single +12V rail design enables non-stop usage with stable and reliable performance.
+			Smart Series adopt 120mm cooling fan delivers excellent Airflow at an exceptionally low noise level. Smart Series
+			saves energy through its high energy efficiency of up to 86% and is 80 PLUS standard Certified. High quality
+			components enable non-stop usage with stable and reliable performance, no more capacitor explosion and leakage.
+			Single +12V output.`,
+			power:850,
+			powerUnit:"watts",
+			image:thermaltaketoughpower850
+		},
+		{
+			brand:"Thermaltake",
+			model:"Smart-500",
+			price:47.99,
+			description:`Incorporating various high-quality components, The smart series - models are Rated from 500W to 700W
+			- saves energy through its high efficiency of up to 86% and accommodates any mainstream build with the most
+			demanding requirements. An embedded intelligent cooling fan delivers excellent Airflow at an exceptionally low
+			noise level. Additionally, the single +12V rail design enables non-stop usage with stable and reliable performance.
+			Smart Series adopt 120mm cooling fan delivers excellent Airflow at an exceptionally low noise level. Smart Series
+			saves energy through its high energy efficiency of up to 86% and is 80 PLUS standard Certified. High quality
+			components enable non-stop usage with stable and reliable performance, no more capacitor explosion and leakage.
+			Single +12V output.`,
+			power:500,
+			powerUnit:"watts",
+			image:thermaltakesmart500
+		},
+		{
+			brand:"EVGA",
+			model:"750N1",
+			price:62.99,
+			description:`When building on a budget, the EVGA 750W power supply is a great choice at a low cost. Supporting
+			30a on a single +12V rail provides more options without having to reduce your component requirements. The EVGA
+			750W offers the connections and protections needed for basic system builds. With a standard 2 year and Ultra
+			quiet fan design the EVGA 750W power supply will be a great asset for your next build on a budget.`,
+			power:750,
+			powerUnit:"watts",
+			image:evga750n1
+		},
+		{
+			brand:"Gigabyte",
+			model:"GP-P850GM",
+			price:127.65,
+			description:`80 PLUS Gold certified Fully modular design 120mm Smart Hydraulic Bearing (HYB) Fan Main Japanese
+			capacitors Powerful single +12V rail OVP/OPP/SCP/UVP/OCP/OTP protection Compact size 5 years warranty (Adjusted
+			according to different regions)`,
+			power:850,
+			powerUnit:"watts",
+			image:gigabytegpp850gm
+		},
+		
+		
+		{
+			brand:"Corsair",
+			model:"HX1200",
+			price:439.99,
+			description:`The CORSAIR HX Series gives you extremely tight voltages and virtually silent operation. With all
+			Japanese capacitors, they're ideal for high performance PCs where reliability is essential. 80+ Platinum efficiency
+			reduces operating cost and excess heat, and together with the Zero RPM Fan Mode, gives you virtually silent
+			operation. Tech support: 1-888-222-4346 opt. 1`,
+			power:1200,
+			powerUnit:"watts",
+			image:corsairhx1200
+		},
+		{
+			brand:"EVGA",
+			model:"Supernova",
+			price:524.99,
+			description:`Introducing the EVGA Supernova 1200 P2 power supply. This power supply raises the bar with 1200W of
+			continuous power delivery and 92% efficiency. A fully modular design reduces case clutter and 100% Japanese
+			Capacitors ensures that only the absolute best components are used. What does that mean? The best stability,
+			reliability, overclock ability and unparalleled control. The EVGA Supernova 1200 P2 is the ultimate tool to eliminate
+			all system bottlenecks and achieve unrivaled performance.`,
+			power:1200,
+			powerUnit:"watts",
+			image:evgasupernova1200
+		},
+		{
+			brand:"Thermaltake",
+			model:"Toughpower-850",
+			price:127.65,
+			description:`Incorporating various high-quality components, The smart series - models are Rated from 500W to 700W
+			- saves energy through its high efficiency of up to 86% and accommodates any mainstream build with the most
+			demanding requirements. An embedded intelligent cooling fan delivers excellent Airflow at an exceptionally low
+			noise level. Additionally, the single +12V rail design enables non-stop usage with stable and reliable performance.
+			Smart Series adopt 120mm cooling fan delivers excellent Airflow at an exceptionally low noise level. Smart Series
+			saves energy through its high energy efficiency of up to 86% and is 80 PLUS standard Certified. High quality
+			components enable non-stop usage with stable and reliable performance, no more capacitor explosion and leakage.
+			Single +12V output.`,
+			power:850,
+			powerUnit:"watts",
+			image:thermaltaketoughpower850
+		},
+		{
+			brand:"Corsair",
+			model:"RMX750",
+			price:144.95,
+			description:`Corsair RM750x series power supplies are built with the highest quality components to deliver 80 PLUS
+			Gold efficient power to your PC. Using only Japanese 105 Degree C capacitors, users can depend on an RM750x PSUs' long
+			life and reliability, backed by a ten year warranty. Zero RPM Mode means an RM750x series PSU is virtually silent at
+			low and medium loads, and even at maximum power, a low noise fan ensures quiet operation. Fully modular cables make PC
+			builds and upgrades easy, as you only need to install the cables your system requires. Quiet, efficient and dependable,
+			an RM750x PSU has everything you need to power your high performance PC for years to come. PC for years to come.
+			Continuous output rated temperature: 50°C.`,
+			power:750,
+			powerUnit:"watts",
+			image:corsairrmx750
+		},
+		{
+			brand:"Thermaltake",
+			model:"Smart-600",
+			price:54.99,
+			description:`Incorporating various high-quality components, The smart series - models are Rated from 500W to 700W
+			- saves energy through its high efficiency of up to 86% and accommodates any mainstream build with the most
+			demanding requirements. An embedded intelligent cooling fan delivers excellent Airflow at an exceptionally low
+			noise level. Additionally, the single +12V rail design enables non-stop usage with stable and reliable performance.
+			Smart Series adopt 120mm cooling fan delivers excellent Airflow at an exceptionally low noise level. Smart Series
+			saves energy through its high energy efficiency of up to 86% and is 80 PLUS standard Certified. High quality
+			components enable non-stop usage with stable and reliable performance, no more capacitor explosion and leakage.
+			Single +12V output.`,
+			power:600,
+			powerUnit:"watts",
+			image:thermaltakesmart600
+		},
+		{
+			brand:"Thermaltake",
+			model:"Smart-500",
+			price:47.99,
+			description:`Incorporating various high-quality components, The smart series - models are Rated from 500W to 700W
+			- saves energy through its high efficiency of up to 86% and accommodates any mainstream build with the most
+			demanding requirements. An embedded intelligent cooling fan delivers excellent Airflow at an exceptionally low
+			noise level. Additionally, the single +12V rail design enables non-stop usage with stable and reliable performance.
+			Smart Series adopt 120mm cooling fan delivers excellent Airflow at an exceptionally low noise level. Smart Series
+			saves energy through its high energy efficiency of up to 86% and is 80 PLUS standard Certified. High quality
+			components enable non-stop usage with stable and reliable performance, no more capacitor explosion and leakage.
+			Single +12V output.`,
+			power:500,
+			powerUnit:"watts",
+			image:thermaltakesmart500
+		},
+		{
+			brand:"EVGA",
+			model:"750N1",
+			price:62.99,
+			description:`When building on a budget, the EVGA 750W power supply is a great choice at a low cost. Supporting
+			30a on a single +12V rail provides more options without having to reduce your component requirements. The EVGA
+			750W offers the connections and protections needed for basic system builds. With a standard 2 year and Ultra
+			quiet fan design the EVGA 750W power supply will be a great asset for your next build on a budget.`,
+			power:750,
+			powerUnit:"watts",
+			image:evga750n1
+		},
+		{
+			brand:"Gigabyte",
+			model:"GP-P850GM",
+			price:127.65,
+			description:`80 PLUS Gold certified Fully modular design 120mm Smart Hydraulic Bearing (HYB) Fan Main Japanese
+			capacitors Powerful single +12V rail OVP/OPP/SCP/UVP/OCP/OTP protection Compact size 5 years warranty (Adjusted
+			according to different regions)`,
+			power:850,
+			powerUnit:"watts",
+			image:gigabytegpp850gm
+		},
+		
+		
+		{
+			brand:"Corsair",
+			model:"HX1200",
+			price:439.99,
+			description:`The CORSAIR HX Series gives you extremely tight voltages and virtually silent operation. With all
+			Japanese capacitors, they're ideal for high performance PCs where reliability is essential. 80+ Platinum efficiency
+			reduces operating cost and excess heat, and together with the Zero RPM Fan Mode, gives you virtually silent
+			operation. Tech support: 1-888-222-4346 opt. 1`,
+			power:1200,
+			powerUnit:"watts",
+			image:corsairhx1200
+		},
+		{
+			brand:"EVGA",
+			model:"Supernova",
+			price:524.99,
+			description:`Introducing the EVGA Supernova 1200 P2 power supply. This power supply raises the bar with 1200W of
+			continuous power delivery and 92% efficiency. A fully modular design reduces case clutter and 100% Japanese
+			Capacitors ensures that only the absolute best components are used. What does that mean? The best stability,
+			reliability, overclock ability and unparalleled control. The EVGA Supernova 1200 P2 is the ultimate tool to eliminate
+			all system bottlenecks and achieve unrivaled performance.`,
+			power:1200,
+			powerUnit:"watts",
+			image:evgasupernova1200
+		},
+		{
+			brand:"Thermaltake",
+			model:"Toughpower-850",
+			price:127.65,
+			description:`Incorporating various high-quality components, The smart series - models are Rated from 500W to 700W
+			- saves energy through its high efficiency of up to 86% and accommodates any mainstream build with the most
+			demanding requirements. An embedded intelligent cooling fan delivers excellent Airflow at an exceptionally low
+			noise level. Additionally, the single +12V rail design enables non-stop usage with stable and reliable performance.
+			Smart Series adopt 120mm cooling fan delivers excellent Airflow at an exceptionally low noise level. Smart Series
+			saves energy through its high energy efficiency of up to 86% and is 80 PLUS standard Certified. High quality
+			components enable non-stop usage with stable and reliable performance, no more capacitor explosion and leakage.
+			Single +12V output.`,
+			power:850,
+			powerUnit:"watts",
+			image:thermaltaketoughpower850
+		},
+		{
+			brand:"Corsair",
+			model:"RMX750",
+			price:144.95,
+			description:`Corsair RM750x series power supplies are built with the highest quality components to deliver 80 PLUS
+			Gold efficient power to your PC. Using only Japanese 105 Degree C capacitors, users can depend on an RM750x PSUs' long
+			life and reliability, backed by a ten year warranty. Zero RPM Mode means an RM750x series PSU is virtually silent at
+			low and medium loads, and even at maximum power, a low noise fan ensures quiet operation. Fully modular cables make PC
+			builds and upgrades easy, as you only need to install the cables your system requires. Quiet, efficient and dependable,
+			an RM750x PSU has everything you need to power your high performance PC for years to come. PC for years to come.
+			Continuous output rated temperature: 50°C.`,
+			power:750,
+			powerUnit:"watts",
+			image:corsairrmx750
+		},
+		{
+			brand:"Thermaltake",
+			model:"Smart-600",
+			price:54.99,
+			description:`Incorporating various high-quality components, The smart series - models are Rated from 500W to 700W
+			- saves energy through its high efficiency of up to 86% and accommodates any mainstream build with the most
+			demanding requirements. An embedded intelligent cooling fan delivers excellent Airflow at an exceptionally low
+			noise level. Additionally, the single +12V rail design enables non-stop usage with stable and reliable performance.
+			Smart Series adopt 120mm cooling fan delivers excellent Airflow at an exceptionally low noise level. Smart Series
+			saves energy through its high energy efficiency of up to 86% and is 80 PLUS standard Certified. High quality
+			components enable non-stop usage with stable and reliable performance, no more capacitor explosion and leakage.
+			Single +12V output.`,
+			power:600,
+			powerUnit:"watts",
+			image:thermaltakesmart600
 		}
 
 	],
 	
-	
 	graphicsCards: [
+		{
+			brand:"Nvidia",
+			model:"rtx3060",
+			price:849.99,
+			description:`The EVGA GeForce RTX 3060 delivers the unprecedented performance that gamers crave for 4K 
+				resolution gaming, powered by the NVIDIA Ampere architecture. It's built with enhanced RT Cores and
+				Tensor Cores, streaming multiprocessors, and superfast G6X memory for an amazing gaming experience.
+				Combined with the next generation of design, cooling, and overclocking with EVGA Precision XI, the
+				EVGA GeForce RTX 3080 Series presents a modern definition in ultimate performance.`,
+			memory:8,
+			memoryUnit:"GB",
+			image:nvidiageforcertx3060
+		},
+		{
+			brand:"Nvidia",
+			model:"rtx2060",
+			price:699.99,
+			description:`The EVGA GeForce RTX 20-Series Graphics Cards are powered by the all-new NVIDIA Turing
+			architecture to give you incredible new levels of gaming realism, speed, power efficiency, and immersion.
+			With the EVGA GeForce RTX 20-Series gaming cards you get the best gaming experience with next generation
+			graphics performance, ice cold cooling, and advanced overclocking features with the all new EVGA Precision
+			X1 software. The new NVIDIA GeForce RTX GPUs have reinvented graphics and set a new bar for perfrmance.
+			Powered by the new NVIDIA Turing GPU architecture and the revolutionary NVIDI RTX platform, the new graphics
+			cards bring together real-time ray tracing, artificial intelligence, and programmable shading. This is not
+			only a whole new way to experience games - this is the ultimate PC gaming experience.`,
+			memory:8,
+			memoryUnit:"GB",
+			image:nvidiageforcertx2060
+		},
+		{
+			
+			brand:"Nvidia",
+			model:"rtx3090",
+			price:2299.99,
+			description:`VENTUS brings a performance-focused design that maintains the essentials to accomplish any task at
+			hand. A capable triple fan arrangement laid into a rigid industrial design lets this sharp looking graphics card
+			fit into any build. The GeForce RTX 3090 is a big ferocious GPU (BFGPU) with TITAN class performance. It's powered
+			by Ampere—NVIDIA's 2nd gen RTX architecture—doubling down on ray tracing and AI performance with enhanced RT Cores, 
+			Tensor Cores, and new streaming multiprocessors. Plus, it features a staggering 24 GB of G6X memory, all to deliver 
+			the ultimate gaming experience.`,
+			memory:24,
+			memoryUnit:"GB",
+			image:nvidiageforcertx3090
+		},
+		{	
+			
+			brand:"Nvidia",
+			model:"gtx1050ti",
+			price:199.80,
+			description:`Gigabyte G1 Gaming Series graphics cards are crafted for perfection in pursuit of the ultimate
+			graphics experience for gaming enthusiasts. Based on the revolutionary NVIDIA Pascal GPU architecture, G1
+			gaming graphics card brings you incredible gaming experience. -Pascal-powered graphics card give you superior
+			performance and power efficiency -Classic and modern games at 1080p @ 60 FPS -Fast, smooth, power-efficient
+			gaming experiences`,
+			memory:4,
+			memoryUnit:"GB",
+			image:nvidiageforcegtx1050ti
+		},
+		//Repeated items below
+		{
+			brand:"Nvidia",
+			model:"rtx3060",
+			price:849.99,
+			description:`The EVGA GeForce RTX 3060 delivers the unprecedented performance that gamers crave for 4K 
+				resolution gaming, powered by the NVIDIA Ampere architecture. It's built with enhanced RT Cores and
+				Tensor Cores, streaming multiprocessors, and superfast G6X memory for an amazing gaming experience.
+				Combined with the next generation of design, cooling, and overclocking with EVGA Precision XI, the
+				EVGA GeForce RTX 3080 Series presents a modern definition in ultimate performance.`,
+			memory:8,
+			memoryUnit:"GB",
+			image:nvidiageforcertx3060
+		},
+		{
+			brand:"Nvidia",
+			model:"rtx2060",
+			price:699.99,
+			description:`The EVGA GeForce RTX 20-Series Graphics Cards are powered by the all-new NVIDIA Turing
+			architecture to give you incredible new levels of gaming realism, speed, power efficiency, and immersion.
+			With the EVGA GeForce RTX 20-Series gaming cards you get the best gaming experience with next generation
+			graphics performance, ice cold cooling, and advanced overclocking features with the all new EVGA Precision
+			X1 software. The new NVIDIA GeForce RTX GPUs have reinvented graphics and set a new bar for perfrmance.
+			Powered by the new NVIDIA Turing GPU architecture and the revolutionary NVIDI RTX platform, the new graphics
+			cards bring together real-time ray tracing, artificial intelligence, and programmable shading. This is not
+			only a whole new way to experience games - this is the ultimate PC gaming experience.`,
+			memory:8,
+			memoryUnit:"GB",
+			image:nvidiageforcertx2060
+		},
+		{
+			
+			brand:"Nvidia",
+			model:"rtx3090",
+			price:2299.99,
+			description:`VENTUS brings a performance-focused design that maintains the essentials to accomplish any task at
+			hand. A capable triple fan arrangement laid into a rigid industrial design lets this sharp looking graphics card
+			fit into any build. The GeForce RTX 3090 is a big ferocious GPU (BFGPU) with TITAN class performance. It's powered
+			by Ampere—NVIDIA's 2nd gen RTX architecture—doubling down on ray tracing and AI performance with enhanced RT Cores, 
+			Tensor Cores, and new streaming multiprocessors. Plus, it features a staggering 24 GB of G6X memory, all to deliver 
+			the ultimate gaming experience.`,
+			memory:24,
+			memoryUnit:"GB",
+			image:nvidiageforcertx3090
+		},
+		{	
+			
+			brand:"Nvidia",
+			model:"gtx1050ti",
+			price:199.80,
+			description:`Gigabyte G1 Gaming Series graphics cards are crafted for perfection in pursuit of the ultimate
+			graphics experience for gaming enthusiasts. Based on the revolutionary NVIDIA Pascal GPU architecture, G1
+			gaming graphics card brings you incredible gaming experience. -Pascal-powered graphics card give you superior
+			performance and power efficiency -Classic and modern games at 1080p @ 60 FPS -Fast, smooth, power-efficient
+			gaming experiences`,
+			memory:4,
+			memoryUnit:"GB",
+			image:nvidiageforcegtx1050ti
+		},
+		{
+			brand:"Nvidia",
+			model:"rtx3060",
+			price:849.99,
+			description:`The EVGA GeForce RTX 3060 delivers the unprecedented performance that gamers crave for 4K 
+				resolution gaming, powered by the NVIDIA Ampere architecture. It's built with enhanced RT Cores and
+				Tensor Cores, streaming multiprocessors, and superfast G6X memory for an amazing gaming experience.
+				Combined with the next generation of design, cooling, and overclocking with EVGA Precision XI, the
+				EVGA GeForce RTX 3080 Series presents a modern definition in ultimate performance.`,
+			memory:8,
+			memoryUnit:"GB",
+			image:nvidiageforcertx3060
+		},
+		{
+			brand:"Nvidia",
+			model:"rtx2060",
+			price:699.99,
+			description:`The EVGA GeForce RTX 20-Series Graphics Cards are powered by the all-new NVIDIA Turing
+			architecture to give you incredible new levels of gaming realism, speed, power efficiency, and immersion.
+			With the EVGA GeForce RTX 20-Series gaming cards you get the best gaming experience with next generation
+			graphics performance, ice cold cooling, and advanced overclocking features with the all new EVGA Precision
+			X1 software. The new NVIDIA GeForce RTX GPUs have reinvented graphics and set a new bar for perfrmance.
+			Powered by the new NVIDIA Turing GPU architecture and the revolutionary NVIDI RTX platform, the new graphics
+			cards bring together real-time ray tracing, artificial intelligence, and programmable shading. This is not
+			only a whole new way to experience games - this is the ultimate PC gaming experience.`,
+			memory:8,
+			memoryUnit:"GB",
+			image:nvidiageforcertx2060
+		},
+		{
+			
+			brand:"Nvidia",
+			model:"rtx3090",
+			price:2299.99,
+			description:`VENTUS brings a performance-focused design that maintains the essentials to accomplish any task at
+			hand. A capable triple fan arrangement laid into a rigid industrial design lets this sharp looking graphics card
+			fit into any build. The GeForce RTX 3090 is a big ferocious GPU (BFGPU) with TITAN class performance. It's powered
+			by Ampere—NVIDIA's 2nd gen RTX architecture—doubling down on ray tracing and AI performance with enhanced RT Cores, 
+			Tensor Cores, and new streaming multiprocessors. Plus, it features a staggering 24 GB of G6X memory, all to deliver 
+			the ultimate gaming experience.`,
+			memory:24,
+			memoryUnit:"GB",
+			image:nvidiageforcertx3090
+		},
+		{	
+			
+			brand:"Nvidia",
+			model:"gtx1050ti",
+			price:199.80,
+			description:`Gigabyte G1 Gaming Series graphics cards are crafted for perfection in pursuit of the ultimate
+			graphics experience for gaming enthusiasts. Based on the revolutionary NVIDIA Pascal GPU architecture, G1
+			gaming graphics card brings you incredible gaming experience. -Pascal-powered graphics card give you superior
+			performance and power efficiency -Classic and modern games at 1080p @ 60 FPS -Fast, smooth, power-efficient
+			gaming experiences`,
+			memory:4,
+			memoryUnit:"GB",
+			image:nvidiageforcegtx1050ti
+		},
 		{
 			brand:"Nvidia",
 			model:"rtx3060",
@@ -257,8 +699,304 @@ let data = {
 		}
 	],
 	
-	
 	ram: [
+		{	
+			brand:"Corsair",
+			model:"Vengeance RGB",
+			price:85.99,
+			description:`Corsair Vengeance Pro Series memory modules are designed for overclocking on the latest 3rd and
+			4th generation Intel Core platforms, with eight-layer PCBs and ICs specially selected for performance
+			potential. The aluminum heat spreaders provide superior temperature management and have the aggressive
+			look you want in your gaming rig. XMP 1.3 profiles allow for automatic, reliable overclocking. They're
+			available in multiple colors to let you match your Vengeance Pro memory to your system's color scheme. As a
+			bonus, they're priced to deliver class-leading value, so you'll have more room left in your system build
+			budget. Speed Rating: PC3-12800 (1600MHz).`,
+			capacity:16,
+			capacityUnit:"GB",
+			type:"ddr3",
+			image:corsairvengeance
+		},
+		{	
+			brand:"A-Tech",
+			model:"FBACT2KIT",
+			price:16.25,
+			description:`An A-Tech RAM (Memory) upgrade is an easy, quick way to boost your desktop computer's performance
+			by speeding up loading times, improving system responsiveness, and increasing your computer's ability to
+			handle higher workloads. Take on more and multitask with ease with a simple and affordable A-Tech RAM upgrade!`,
+			capacity:4,
+			capacityUnit:"GB",
+			type:"ddr2",
+			image:atechfbact2kit
+		},
+		{	
+			brand:"HyperX",
+			model:"Fury",
+			price:133.99,
+			description:`HyperX FURY DDR4 RGB features RGB lighting and speeds up to 3733MHz for a stylish performance boost.
+			It’s both XMP-ready and Ready for Ryzen, and is available in 2400MHz–3733MHz speeds, CL15–19 latencies, 8GB, 16GB,
+			and 32GB module capacities, and 16GB–128GB kit capacities. Get Plug N Play auto-overclocking at 2400MHz and
+			2666MHz speeds for your Intel or AMD-based system. FURY DDR4 RGB’s backed by a lifetime warranty, a worry-free,
+			cost-effective upgrade.`,
+			capacity:32,
+			capacityUnit:"GB",
+			type:"ddr4",
+			image:hyperxfury
+		},
+		{	
+			brand:"HyperX",
+			model:"Furyblack",
+			price:60.99,
+			description:`Give your AMD- or Intel-based system the performance needed to stay atop the food chain with the 
+			record-breaking, ultra-fast HyperX Predator DDR4. Boost your frame rate, keep your streams broadcasting smooth, 
+			and plow through your highlight reel editing with speeds up to 4800MHz paired with quick CL12–CL19 timings. The 
+			aggressive, stylish black heat spreader and matching black PCB will allow you to beat the heat and strike fear into
+			the hearts of your foes. It’s available in single module capacities of 8GB–32GB and kits of 2, 4, and 8 with
+			capacities of 16GB–256GB. Predator DDR4 is Intel XMP certified with profiles that are optimized for Intel’s latest
+			chipsets – just select the hand-tuned profile in your BIOS and you’re ready to go.`,
+			capacity:16,
+			capacityUnit:"GB",
+			type:"ddr4",
+			image:hyperxfuryblack
+		},
+		{	
+			brand:"Corsair",
+			model:"Dominator Platinum",
+			price:476.72,
+			description:`Corsair Dominator Platinum RGB DDR4 memory redefines premium DDR4 memory, with timeless iconic design, 
+			superior craftsmanship and aluminum construction that's built to last. Powered by tightly-screened high-frequency
+			memory chips, Dominator Platinum RGB ensures high frequency performance with generous room for overclocking thanks
+			to a custom PCB cooled by CORSAIR's patented DHX cooling technology. Use Corsair iCUE software to customize
+			virtually limitless lighting effects from 12 ultra-bright, individually addressable RGB LEDs, and stay informed with
+			real-time frequency and temperature monitoring. Complete with wide compatibility with the latest motherboards,
+			Intel XMP 2.0 support for simple setup, and a limited lifetime warranty, This is DDR4 memory in a class of its own. `,
+			capacity:64,
+			capacityUnit:"GB",
+			type:"ddr4",
+			image:corsairdominator
+		},
+		//Repeated items below
+		{	
+			brand:"Corsair",
+			model:"Vengeance RGB",
+			price:85.99,
+			description:`Corsair Vengeance Pro Series memory modules are designed for overclocking on the latest 3rd and
+			4th generation Intel Core platforms, with eight-layer PCBs and ICs specially selected for performance
+			potential. The aluminum heat spreaders provide superior temperature management and have the aggressive
+			look you want in your gaming rig. XMP 1.3 profiles allow for automatic, reliable overclocking. They're
+			available in multiple colors to let you match your Vengeance Pro memory to your system's color scheme. As a
+			bonus, they're priced to deliver class-leading value, so you'll have more room left in your system build
+			budget. Speed Rating: PC3-12800 (1600MHz).`,
+			capacity:16,
+			capacityUnit:"GB",
+			type:"ddr3",
+			image:corsairvengeance
+		},
+		{	
+			brand:"A-Tech",
+			model:"FBACT2KIT",
+			price:16.25,
+			description:`An A-Tech RAM (Memory) upgrade is an easy, quick way to boost your desktop computer's performance
+			by speeding up loading times, improving system responsiveness, and increasing your computer's ability to
+			handle higher workloads. Take on more and multitask with ease with a simple and affordable A-Tech RAM upgrade!`,
+			capacity:4,
+			capacityUnit:"GB",
+			type:"ddr2",
+			image:atechfbact2kit
+		},
+		{	
+			brand:"HyperX",
+			model:"Fury",
+			price:133.99,
+			description:`HyperX FURY DDR4 RGB features RGB lighting and speeds up to 3733MHz for a stylish performance boost.
+			It’s both XMP-ready and Ready for Ryzen, and is available in 2400MHz–3733MHz speeds, CL15–19 latencies, 8GB, 16GB,
+			and 32GB module capacities, and 16GB–128GB kit capacities. Get Plug N Play auto-overclocking at 2400MHz and
+			2666MHz speeds for your Intel or AMD-based system. FURY DDR4 RGB’s backed by a lifetime warranty, a worry-free,
+			cost-effective upgrade.`,
+			capacity:32,
+			capacityUnit:"GB",
+			type:"ddr4",
+			image:hyperxfury
+		},
+		{	
+			brand:"HyperX",
+			model:"Furyblack",
+			price:60.99,
+			description:`Give your AMD- or Intel-based system the performance needed to stay atop the food chain with the 
+			record-breaking, ultra-fast HyperX Predator DDR4. Boost your frame rate, keep your streams broadcasting smooth, 
+			and plow through your highlight reel editing with speeds up to 4800MHz paired with quick CL12–CL19 timings. The 
+			aggressive, stylish black heat spreader and matching black PCB will allow you to beat the heat and strike fear into
+			the hearts of your foes. It’s available in single module capacities of 8GB–32GB and kits of 2, 4, and 8 with
+			capacities of 16GB–256GB. Predator DDR4 is Intel XMP certified with profiles that are optimized for Intel’s latest
+			chipsets – just select the hand-tuned profile in your BIOS and you’re ready to go.`,
+			capacity:16,
+			capacityUnit:"GB",
+			type:"ddr4",
+			image:hyperxfuryblack
+		},
+		{	
+			brand:"Corsair",
+			model:"Dominator Platinum",
+			price:476.72,
+			description:`Corsair Dominator Platinum RGB DDR4 memory redefines premium DDR4 memory, with timeless iconic design, 
+			superior craftsmanship and aluminum construction that's built to last. Powered by tightly-screened high-frequency
+			memory chips, Dominator Platinum RGB ensures high frequency performance with generous room for overclocking thanks
+			to a custom PCB cooled by CORSAIR's patented DHX cooling technology. Use Corsair iCUE software to customize
+			virtually limitless lighting effects from 12 ultra-bright, individually addressable RGB LEDs, and stay informed with
+			real-time frequency and temperature monitoring. Complete with wide compatibility with the latest motherboards,
+			Intel XMP 2.0 support for simple setup, and a limited lifetime warranty, This is DDR4 memory in a class of its own. `,
+			capacity:64,
+			capacityUnit:"GB",
+			type:"ddr4",
+			image:corsairdominator
+		},
+		{	
+			brand:"Corsair",
+			model:"Vengeance RGB",
+			price:85.99,
+			description:`Corsair Vengeance Pro Series memory modules are designed for overclocking on the latest 3rd and
+			4th generation Intel Core platforms, with eight-layer PCBs and ICs specially selected for performance
+			potential. The aluminum heat spreaders provide superior temperature management and have the aggressive
+			look you want in your gaming rig. XMP 1.3 profiles allow for automatic, reliable overclocking. They're
+			available in multiple colors to let you match your Vengeance Pro memory to your system's color scheme. As a
+			bonus, they're priced to deliver class-leading value, so you'll have more room left in your system build
+			budget. Speed Rating: PC3-12800 (1600MHz).`,
+			capacity:16,
+			capacityUnit:"GB",
+			type:"ddr3",
+			image:corsairvengeance
+		},
+		{	
+			brand:"A-Tech",
+			model:"FBACT2KIT",
+			price:16.25,
+			description:`An A-Tech RAM (Memory) upgrade is an easy, quick way to boost your desktop computer's performance
+			by speeding up loading times, improving system responsiveness, and increasing your computer's ability to
+			handle higher workloads. Take on more and multitask with ease with a simple and affordable A-Tech RAM upgrade!`,
+			capacity:4,
+			capacityUnit:"GB",
+			type:"ddr2",
+			image:atechfbact2kit
+		},
+		{	
+			brand:"HyperX",
+			model:"Fury",
+			price:133.99,
+			description:`HyperX FURY DDR4 RGB features RGB lighting and speeds up to 3733MHz for a stylish performance boost.
+			It’s both XMP-ready and Ready for Ryzen, and is available in 2400MHz–3733MHz speeds, CL15–19 latencies, 8GB, 16GB,
+			and 32GB module capacities, and 16GB–128GB kit capacities. Get Plug N Play auto-overclocking at 2400MHz and
+			2666MHz speeds for your Intel or AMD-based system. FURY DDR4 RGB’s backed by a lifetime warranty, a worry-free,
+			cost-effective upgrade.`,
+			capacity:32,
+			capacityUnit:"GB",
+			type:"ddr4",
+			image:hyperxfury
+		},
+		{	
+			brand:"HyperX",
+			model:"Furyblack",
+			price:60.99,
+			description:`Give your AMD- or Intel-based system the performance needed to stay atop the food chain with the 
+			record-breaking, ultra-fast HyperX Predator DDR4. Boost your frame rate, keep your streams broadcasting smooth, 
+			and plow through your highlight reel editing with speeds up to 4800MHz paired with quick CL12–CL19 timings. The 
+			aggressive, stylish black heat spreader and matching black PCB will allow you to beat the heat and strike fear into
+			the hearts of your foes. It’s available in single module capacities of 8GB–32GB and kits of 2, 4, and 8 with
+			capacities of 16GB–256GB. Predator DDR4 is Intel XMP certified with profiles that are optimized for Intel’s latest
+			chipsets – just select the hand-tuned profile in your BIOS and you’re ready to go.`,
+			capacity:16,
+			capacityUnit:"GB",
+			type:"ddr4",
+			image:hyperxfuryblack
+		},
+		{	
+			brand:"Corsair",
+			model:"Dominator Platinum",
+			price:476.72,
+			description:`Corsair Dominator Platinum RGB DDR4 memory redefines premium DDR4 memory, with timeless iconic design, 
+			superior craftsmanship and aluminum construction that's built to last. Powered by tightly-screened high-frequency
+			memory chips, Dominator Platinum RGB ensures high frequency performance with generous room for overclocking thanks
+			to a custom PCB cooled by CORSAIR's patented DHX cooling technology. Use Corsair iCUE software to customize
+			virtually limitless lighting effects from 12 ultra-bright, individually addressable RGB LEDs, and stay informed with
+			real-time frequency and temperature monitoring. Complete with wide compatibility with the latest motherboards,
+			Intel XMP 2.0 support for simple setup, and a limited lifetime warranty, This is DDR4 memory in a class of its own. `,
+			capacity:64,
+			capacityUnit:"GB",
+			type:"ddr4",
+			image:corsairdominator
+		},
+		{	
+			brand:"Corsair",
+			model:"Vengeance RGB",
+			price:85.99,
+			description:`Corsair Vengeance Pro Series memory modules are designed for overclocking on the latest 3rd and
+			4th generation Intel Core platforms, with eight-layer PCBs and ICs specially selected for performance
+			potential. The aluminum heat spreaders provide superior temperature management and have the aggressive
+			look you want in your gaming rig. XMP 1.3 profiles allow for automatic, reliable overclocking. They're
+			available in multiple colors to let you match your Vengeance Pro memory to your system's color scheme. As a
+			bonus, they're priced to deliver class-leading value, so you'll have more room left in your system build
+			budget. Speed Rating: PC3-12800 (1600MHz).`,
+			capacity:16,
+			capacityUnit:"GB",
+			type:"ddr3",
+			image:corsairvengeance
+		},
+		{	
+			brand:"A-Tech",
+			model:"FBACT2KIT",
+			price:16.25,
+			description:`An A-Tech RAM (Memory) upgrade is an easy, quick way to boost your desktop computer's performance
+			by speeding up loading times, improving system responsiveness, and increasing your computer's ability to
+			handle higher workloads. Take on more and multitask with ease with a simple and affordable A-Tech RAM upgrade!`,
+			capacity:4,
+			capacityUnit:"GB",
+			type:"ddr2",
+			image:atechfbact2kit
+		},
+		{	
+			brand:"HyperX",
+			model:"Fury",
+			price:133.99,
+			description:`HyperX FURY DDR4 RGB features RGB lighting and speeds up to 3733MHz for a stylish performance boost.
+			It’s both XMP-ready and Ready for Ryzen, and is available in 2400MHz–3733MHz speeds, CL15–19 latencies, 8GB, 16GB,
+			and 32GB module capacities, and 16GB–128GB kit capacities. Get Plug N Play auto-overclocking at 2400MHz and
+			2666MHz speeds for your Intel or AMD-based system. FURY DDR4 RGB’s backed by a lifetime warranty, a worry-free,
+			cost-effective upgrade.`,
+			capacity:32,
+			capacityUnit:"GB",
+			type:"ddr4",
+			image:hyperxfury
+		},
+		{	
+			brand:"HyperX",
+			model:"Furyblack",
+			price:60.99,
+			description:`Give your AMD- or Intel-based system the performance needed to stay atop the food chain with the 
+			record-breaking, ultra-fast HyperX Predator DDR4. Boost your frame rate, keep your streams broadcasting smooth, 
+			and plow through your highlight reel editing with speeds up to 4800MHz paired with quick CL12–CL19 timings. The 
+			aggressive, stylish black heat spreader and matching black PCB will allow you to beat the heat and strike fear into
+			the hearts of your foes. It’s available in single module capacities of 8GB–32GB and kits of 2, 4, and 8 with
+			capacities of 16GB–256GB. Predator DDR4 is Intel XMP certified with profiles that are optimized for Intel’s latest
+			chipsets – just select the hand-tuned profile in your BIOS and you’re ready to go.`,
+			capacity:16,
+			capacityUnit:"GB",
+			type:"ddr4",
+			image:hyperxfuryblack
+		},
+		{	
+			brand:"Corsair",
+			model:"Dominator Platinum",
+			price:476.72,
+			description:`Corsair Dominator Platinum RGB DDR4 memory redefines premium DDR4 memory, with timeless iconic design, 
+			superior craftsmanship and aluminum construction that's built to last. Powered by tightly-screened high-frequency
+			memory chips, Dominator Platinum RGB ensures high frequency performance with generous room for overclocking thanks
+			to a custom PCB cooled by CORSAIR's patented DHX cooling technology. Use Corsair iCUE software to customize
+			virtually limitless lighting effects from 12 ultra-bright, individually addressable RGB LEDs, and stay informed with
+			real-time frequency and temperature monitoring. Complete with wide compatibility with the latest motherboards,
+			Intel XMP 2.0 support for simple setup, and a limited lifetime warranty, This is DDR4 memory in a class of its own. `,
+			capacity:64,
+			capacityUnit:"GB",
+			type:"ddr4",
+			image:corsairdominator
+		},
 		{	
 			brand:"Corsair",
 			model:"Vengeance RGB",
@@ -335,12 +1073,6 @@ let data = {
 		}
 	],
 
-
-
-	
-	
-	
-	
 	storage: [
 		{
 			brand:"Samsung",
@@ -414,25 +1146,58 @@ let data = {
 	
 	keyboards: [
 		{
-			make:"Nvidia",
-			model:2341,
-			price:130.95,
-			description:"Buy nvidia graphics card so you have no problems when you game and all that stuff knamsayn",
+			brand:"Arteck",
+			model:"HW-192",
+			price:25.19,
+			description:`Just simply insert the nano USB receiver into your computer like desktop or laptop, then the keyboard
+			can be used instantly. No need driver. The Keyboard will work up to 33 feet or 10 meters. It allow you to gain quick
+			access to common functions, such as volume level, playback control, copy paste text, and more. It also provides
+			arrow keys, number pad with slim and compact design.`,
+			image:arteckhw192,
+			type:"wireless"
+		},
+		{
+			brand:"Corsair",
+			model:"K55",
+			price:47.99,
+			description:`The K55 RGB keyboard is your first step towards enhanced performance. Stay one step ahead with 6 dedicated
+			on the fly programmable macro keys. Multi key anti-ghosting ensures your simultaneous key press combos are executed the
+			way you wanted. The dedicated volume and media playback buttons enable control of all of your media without interrupting
+			the game. RGB backlighting and intuitive lighting modes provide expressive lighting options, all under your control. Quiet,
+			responsive keys provide a satisfying feel. The K55 RGB gaming keyboard comes with a detachable soft rubber wrist rest to
+			ensure additional comfort during marathon gaming sessions. Keyboard cable type non-braided.`,
+			image:corsairk55,
+			type:"wired"
 		}
 	],
 	
 	
+
+
+
+
+
+
 	
 	wifi: [
 		{
-			make:"Nvidia",
-			model:2341,
-			price:130.95,
-			description:"Buy nvidia graphics card so you have no problems when you game and all that stuff knamsayn",
-			dataRate:1750,
-			dataRateUnit:"Mbps",
+			brand:"Febsmart",
+			model:"N600",
+			price:19.99,
+			description:`Feb Smart Wireless Dual Band N600(2.4GHz 300Mbps or 5GHz 300Mbps) PCI Express (PCIe) Wi-Fi adapter network
+			card with 6dBi External Detachable WiFi antenna special designed for home and office use PCs Internet Surfing, Online
+			Gaming and Video Streaming.`,
+			type:"internal",
+			image:febsmartn600
+		},
+		{
+			brand:"TP-Link",
+			model:"AC600",
+			price:16.99,
+			description:`TP-Link Long Range - AC600 USB 2. 0 Wi-Fi Adapter | 2. 4G/5G High Gain Dual Band Wireless Network Adapter
+			for PC Desktop | Supports Windows 10, 8. 1, 8, 7, XP / Mac OS X 10. 9-10. 14 (Archer T2U Plus).`,
 			type:"external",
-
+			image:tplinkac600
 		}
 	],
 	
