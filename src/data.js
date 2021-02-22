@@ -26,7 +26,7 @@ import corsairdominator from './images/corsairdominator.png';
 
 //Storage Drives
 import samsungevo1000 from './images/samsungevo1000.png';
-
+import seagatest3 from './images/seagatest3.png';
 
 
 
@@ -37,6 +37,7 @@ import inteli510400 from './images/inteli510400.png';
 //Mice
 import jellycombms001 from './images/jellycombms001.png';
 import logitechm525 from './images/logitechm525.png';
+import jellycombms059 from './images/jellycombms059.png';
 
 //Keyboards
 import arteckhw192 from './images/arteckhw192.png';
@@ -1088,9 +1089,23 @@ let data = {
 			of up to 8x higher TBW (Terabytes Written) than the 850 EVO. Feel secure storing and rendering large-sized 4K videos
 			and 3D data used by the latest applications.`,
 			type:"ssd",
-			capacity:1000,
-			capacityUnit:"GB",
+			capacity:1,
+			capacityUnit:"TB",
 			image:samsungevo1000
+		},
+		{
+			brand:"Seagate",
+			model:"ST3",
+			price:79.99,
+			description:`Store more, compute faster, and do it confidently with the proven reliability of BarraCuda internal hard
+			drives. Perfect for designers, musicians, photographers, and video editors using multiple applications at once, these
+			solutions offer uninterrupted performance, optimized read/write caching technology, and a variety of capacities and
+			form factors to choose from. The result is a seamless experience backed by a two-year limited warranty and 20 years
+			of hard drive innovation.`,
+			type:"hdd",
+			capacity:3,
+			capacityUnit:"TB",
+			image:seagatest3
 		}
 	],
 	
@@ -1141,6 +1156,16 @@ let data = {
 			color combinations.`,
 			type:"wireless",
 			image:logitechm525
+		},
+		{
+			brand:"Jelly Comb",
+			model:"MS059",
+			price:9.99,
+			description:`This RGB backlit wired mouse only needs a light effect control button to switch the light effect
+			you like. The four light modes : 1. Rainbow Breathing Light 2. Rainbow Streaming Light (Default) 3. Neon 4.
+			Floating Light. You can switch freely according to your preferences.`,
+			type:"wired",
+			image:jellycombms059
 		}
 	],
 	
