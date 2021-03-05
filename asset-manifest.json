@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/techworld/static/css/main.3c311933.chunk.css",
-    "main.js": "/techworld/static/js/main.d700b6f8.chunk.js",
-    "main.js.map": "/techworld/static/js/main.d700b6f8.chunk.js.map",
+    "main.js": "/techworld/static/js/main.b0e707ef.chunk.js",
+    "main.js.map": "/techworld/static/js/main.b0e707ef.chunk.js.map",
     "runtime-main.js": "/techworld/static/js/runtime-main.82ea0ad6.js",
     "runtime-main.js.map": "/techworld/static/js/runtime-main.82ea0ad6.js.map",
     "static/js/2.6ef7de3f.chunk.js": "/techworld/static/js/2.6ef7de3f.chunk.js",
@@ -57,6 +57,6 @@
     "static/js/runtime-main.82ea0ad6.js",
     "static/js/2.6ef7de3f.chunk.js",
     "static/css/main.3c311933.chunk.css",
-    "static/js/main.d700b6f8.chunk.js"
+    "static/js/main.b0e707ef.chunk.js"
   ]
 }
