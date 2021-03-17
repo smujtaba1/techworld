@@ -16,9 +16,9 @@ animation:${fadeIn} .5s linear forwards;
     padding:20px;
     box-sizing:border-box;
     align-items:center;
-    position:sticky;
     
-    top:130px;
+    
+    position:sticky;
     margin:auto;
     
     z-index:3;

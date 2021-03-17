@@ -338,6 +338,7 @@ function CategoryPage (props) {
     
 
     function makeCard(prodObj,filterObj,type){
+        window.scrollTo(0,0);
         toggleCardDisplay(type);
         makeBuyCardInfo({...prodObj,filters:filterObj})
     }

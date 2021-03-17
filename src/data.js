@@ -777,22 +777,6 @@ let data = {
 		},
 		//Repeated items below
 		{	
-			brand:"Corsair",
-			model:"Vengeance RGB",
-			price:85.99,
-			description:`Corsair Vengeance Pro Series memory modules are designed for overclocking on the latest 3rd and
-			4th generation Intel Core platforms, with eight-layer PCBs and ICs specially selected for performance
-			potential. The aluminum heat spreaders provide superior temperature management and have the aggressive
-			look you want in your gaming rig. XMP 1.3 profiles allow for automatic, reliable overclocking. They're
-			available in multiple colors to let you match your Vengeance Pro memory to your system's color scheme. As a
-			bonus, they're priced to deliver class-leading value, so you'll have more room left in your system build
-			budget. Speed Rating: PC3-12800 (1600MHz).`,
-			capacity:16,
-			capacityUnit:"GB",
-			type:"ddr3",
-			image:corsairvengeance
-		},
-		{	
 			brand:"A-Tech",
 			model:"FBACT2KIT",
 			price:16.25,
