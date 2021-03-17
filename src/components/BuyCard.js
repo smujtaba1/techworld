@@ -18,9 +18,11 @@ animation:${fadeIn} .5s linear forwards;
     align-items:center;
     
     
-    position:sticky;
+    position:absolute;
     margin:auto;
-    
+    top:130px;
+    left:50%;
+    transform:translatex(-50%);
     z-index:3;
     min-width:250px;
     max-width:500px;
