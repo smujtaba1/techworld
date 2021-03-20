@@ -2,7 +2,7 @@
   "name": "techworld",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://smujtaba1.github.io/techworld",
+  "homepage": "smujtaba1.github.io/techworld",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",

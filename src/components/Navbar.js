@@ -159,7 +159,7 @@ const Banner = styled.div`
 function Navbar() {
 
     let cartCount = useContext(MainContext);
-
+    //dfdf
   
     return (
         <Banner>

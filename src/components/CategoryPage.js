@@ -207,6 +207,7 @@ function CategoryPage (props) {
     const [currPage,changeCurrPage]=useState(2);
     const [perPage,changePerPage]=useState(5);
 
+    useEffect(()=>window.scrollTo(0,0),[])
 
     function makeFilterHead(){
         return props.filters.map(
@@ -390,7 +391,10 @@ function CategoryPage (props) {
                 </div>
                 <div className="category-main-pagesnav">
                     <span>Page: </span>
-                    {pagesArray.map((val,ind,arr)=><Link onClick={()=>changeCurrPage(ind+2)}key={ind} to={`${props.match.path}/${ind+1}`}>{ind+1}</Link>)}
+                    {pagesArray.map((val,ind,arr)=><Link onClick={()=>{
+                        changeCurrPage(ind+2)
+                        window.scrollTo(0,0)
+                    }}key={ind} to={`${props.match.path}/${ind+1}`}>{ind+1}</Link>)}
                 </div>
             </div>
         )

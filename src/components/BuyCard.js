@@ -9,7 +9,7 @@ const fadeIn = keyframes`
 `;
 
 let Buy= styled.div`
-animation:${fadeIn} .5s linear forwards;
+    animation:${fadeIn} .5s linear forwards;
     background-color:white;
     display:${props=>props.dis};
     grid-template-columns:1fr;
