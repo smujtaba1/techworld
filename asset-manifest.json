@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/techworld/static/css/main.3c311933.chunk.css",
-    "main.js": "/techworld/static/js/main.995c25d1.chunk.js",
-    "main.js.map": "/techworld/static/js/main.995c25d1.chunk.js.map",
+    "main.js": "/techworld/static/js/main.81b63b5a.chunk.js",
+    "main.js.map": "/techworld/static/js/main.81b63b5a.chunk.js.map",
     "runtime-main.js": "/techworld/static/js/runtime-main.82ea0ad6.js",
     "runtime-main.js.map": "/techworld/static/js/runtime-main.82ea0ad6.js.map",
     "static/js/2.6ef7de3f.chunk.js": "/techworld/static/js/2.6ef7de3f.chunk.js",
@@ -50,6 +50,7 @@
     "static/media/thermaltakesmart500.aaaddce6.png": "/techworld/static/media/thermaltakesmart500.aaaddce6.png",
     "static/media/thermaltakesmart600.571d40ed.png": "/techworld/static/media/thermaltakesmart600.571d40ed.png",
     "static/media/thermaltaketoughpower850.d11191fa.png": "/techworld/static/media/thermaltaketoughpower850.d11191fa.png",
+    "static/media/thermaltaketoughpowergrand850.dc27e3df.png": "/techworld/static/media/thermaltaketoughpowergrand850.dc27e3df.png",
     "static/media/tplinkac600.5e0a8408.png": "/techworld/static/media/tplinkac600.5e0a8408.png",
     "static/media/wifiadapters.ae331d7f.png": "/techworld/static/media/wifiadapters.ae331d7f.png"
   },
@@ -57,6 +58,6 @@
     "static/js/runtime-main.82ea0ad6.js",
     "static/js/2.6ef7de3f.chunk.js",
     "static/css/main.3c311933.chunk.css",
-    "static/js/main.995c25d1.chunk.js"
+    "static/js/main.81b63b5a.chunk.js"
   ]
 }
