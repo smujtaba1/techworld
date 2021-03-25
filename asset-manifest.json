@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/techworld/static/css/main.3c311933.chunk.css",
-    "main.js": "/techworld/static/js/main.b8a6017d.chunk.js",
-    "main.js.map": "/techworld/static/js/main.b8a6017d.chunk.js.map",
+    "main.js": "/techworld/static/js/main.287bcb14.chunk.js",
+    "main.js.map": "/techworld/static/js/main.287bcb14.chunk.js.map",
     "runtime-main.js": "/techworld/static/js/runtime-main.82ea0ad6.js",
     "runtime-main.js.map": "/techworld/static/js/runtime-main.82ea0ad6.js.map",
-    "static/js/2.6ef7de3f.chunk.js": "/techworld/static/js/2.6ef7de3f.chunk.js",
-    "static/js/2.6ef7de3f.chunk.js.map": "/techworld/static/js/2.6ef7de3f.chunk.js.map",
+    "static/js/2.1a6ae3ac.chunk.js": "/techworld/static/js/2.1a6ae3ac.chunk.js",
+    "static/js/2.1a6ae3ac.chunk.js.map": "/techworld/static/js/2.1a6ae3ac.chunk.js.map",
     "index.html": "/techworld/index.html",
     "static/css/main.3c311933.chunk.css.map": "/techworld/static/css/main.3c311933.chunk.css.map",
-    "static/js/2.6ef7de3f.chunk.js.LICENSE.txt": "/techworld/static/js/2.6ef7de3f.chunk.js.LICENSE.txt",
+    "static/js/2.1a6ae3ac.chunk.js.LICENSE.txt": "/techworld/static/js/2.1a6ae3ac.chunk.js.LICENSE.txt",
     "static/media/amdryzen3600.c0823773.png": "/techworld/static/media/amdryzen3600.c0823773.png",
     "static/media/aresgameagv750.5f8b08f6.png": "/techworld/static/media/aresgameagv750.5f8b08f6.png",
     "static/media/arteckhw192.1c9bf616.png": "/techworld/static/media/arteckhw192.1c9bf616.png",
@@ -46,6 +46,7 @@
     "static/media/seagatest3.132d10eb.png": "/techworld/static/media/seagatest3.132d10eb.png",
     "static/media/searchglass.30887073.svg": "/techworld/static/media/searchglass.30887073.svg",
     "static/media/shoppingcart.d43b3b16.svg": "/techworld/static/media/shoppingcart.d43b3b16.svg",
+    "static/media/siliconpower16.47ada97e.png": "/techworld/static/media/siliconpower16.47ada97e.png",
     "static/media/storagedrives.d205b8d2.png": "/techworld/static/media/storagedrives.d205b8d2.png",
     "static/media/thermaltakesmart500.aaaddce6.png": "/techworld/static/media/thermaltakesmart500.aaaddce6.png",
     "static/media/thermaltakesmart600.571d40ed.png": "/techworld/static/media/thermaltakesmart600.571d40ed.png",
@@ -56,8 +57,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.82ea0ad6.js",
-    "static/js/2.6ef7de3f.chunk.js",
+    "static/js/2.1a6ae3ac.chunk.js",
     "static/css/main.3c311933.chunk.css",
-    "static/js/main.b8a6017d.chunk.js"
+    "static/js/main.287bcb14.chunk.js"
   ]
 }
